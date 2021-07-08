@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Integrity Finance</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+   <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      
+     
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown user-menu">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+   <span class="d-none d-md-inline">LO@globalintegrityfinance.com <i class="fas fa-angle-down"></i></span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="left: inherit; right: 0px;">
+     
+    <li class="user-footer">
+      <a href="profile.html" class="btn btn-default btn-flat">Profile</a>
+      <a href="#" class="btn btn-default btn-flat float-right">Sign out</a>
+    </li>
+  </ul>
+</li>
+       
+      
+    </ul>
+  
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+     
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/logo.png"   alt="logo">
+        </div>
+        
+      </div>
+       <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="index.html" class="nav-link active">
+              <i class="nav-icon fas fa-chart-bar"></i>
+              <p>
+                Broker Dashboard
+              </p>
+            </a>
+             
+          </li>
+          <li class="nav-item">
+            <a href="select-application.html" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p> New Application </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sync-alt"></i>
+              <p>
+                Loans in Process
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-check-alt"></i>
+              <p>
+                Funded Loans
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://atlaspricingengine.azurewebsites.net/" class="nav-link" target="_blank">
+              <i class="nav-icon fas fa-calculator"></i>
+              <p>
+                Loan Calculator
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link">
+              <i class="nav-icon fas fa-plus-circle"></i>
+              <p>
+                FAQ
+                 
+              </p>
+            </a>
+          </li>
+           
+           
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+      <ul class="bottom-menu09">
+        <li><a href="https://globalintegrityfinance.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+        <li><a href="#" target="_blank">Licensing</a></li>
+        <li><a href="https://globalintegrityfinance.com/#onepage_contact" target="_blank">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
+
+    <!-- Main content -->
+    <section class="content" style="padding-top: 10px;">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title"><strong>Borrower and Primary Guarantor Application</strong></h3>
+        </div>
+        <div class="card-body">
+          <p>Please fill out the application below in its entirety. Your changes will not be saved until the application is submitted.   Select existing borrowing entity, or create a new one below.</p>
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Select Customer</label>
+                    <select class="form-control">
+                       <option>New Customer</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Select New or Existing Borrowing Entity <span>*</span></label>
+                    <select class="form-control">
+                       <option>New Borrowing Entity</option>
+                    </select>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12"> <hr> </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Borrowing Entity Name <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Company Type <span>*</span></label>
+                        <select class="form-control">
+                           <option value="">Choose Option</option>
+                           <option>LLC</option>
+                           <option>LLP</option>
+                           <option>S-Corp</option>
+                           <option>C-Corp</option>
+                           <option>Land Trust</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Business EIN <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="xx-xxxxxxx">
+                      </div>
+                    </div>
+                  <div class="col-md-6" style="overflow-y: scroll; max-height: 237px;">
+                       <label class="form-check-label"> <strong>Registered to Do Business in What States <span>*</span> </strong></label>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Alabama</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" checked="">
+                          <label class="form-check-label">Alaska</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Arizona</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" >
+                          <label class="form-check-label">Arkansas</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">California</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" checked="">
+                          <label class="form-check-label">Colorado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Connecticut</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" >
+                          <label class="form-check-label">Delaware</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">District of Columbia</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" checked="">
+                          <label class="form-check-label">Florida</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Georgia</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" >
+                          <label class="form-check-label">Hawaii</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Idaho</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" checked="">
+                          <label class="form-check-label">Illinois</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Indiana</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" >
+                          <label class="form-check-label">Iowa</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12"> 
+                      <hr> 
+                      <h3>Guarantor Information</h3>
+                      <strong>PRIMARY GUARANTOR</strong>
+                       <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>First Name <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Title  </label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>City  </label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Date of Birth <span>*</span></label>
+                          <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Email Address <span>*</span> </label>
+                        <input type="email" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Estimated Credit Score <span>*</span> </label>
+                        <input type="text" class="form-control" placeholder="XXX">
+                      </div>
+                      <div class="input-group">
+                        <label>Ownership Percentage of Borrowing Entity </label>
+                      </div>
+                      <div class="input-group">
+                         
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                          <span class="input-group-text">%</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Last Name <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Steet Address  <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>State  <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Zip  <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Social Security Number  <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                        <label>Phone Number  <span>*</span></label>
+                        <input type="text" class="form-control" >
+                      </div>
+                        
+                      <div class="form-group">
+                        <label>Country of Citizenship <span>*</span></label>
+                        <select class="form-control">
+                           <option value="">Choose Option</option>
+                           <option >United States</option>
+                           <option >Afghanistan</option>
+                           <option>Albania</option>
+                           <option>Algeria</option>
+                           <option>Andorra</option>
+                           <option>Angola</option>
+                           <option>Antigua &amp; Deps</option>
+                           <option>Argentina</option>
+                           <option>Armenia</option>
+                           <option>Australia</option>
+                           <option>Austria</option>
+                           <option >Azerbaijan</option>
+                           <option>Bahamas</option>
+                           <option>Bahrain</option>
+                           <option>Bangladesh</option>
+                           <option>Barbados</option>
+                           <option>Belarus</option>
+                           <option>Belgium</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-12"> <hr> 
+                    <p>Which areas of real estate do you operate in? (Select all that apply.)*</p>
+                    </div>
+                  </div>
+                   
+                </form>
+        </div>
+        
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+   
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- all form function -->
+<script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+<!-- end form function -->
+<script type="text/javascript">
+    
+    $('#reservationdate').datetimepicker();
+ </script>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false, "info": false,"ordering": false,
+      "buttons": ["copy"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": false,
+      "info": false,
+      "autoWidth": false,
+      "responsive": true,
+      "buttons": ["copy"]
+    }).buttons().container().appendTo('#example2_wrapper .col-md-6:eq(0)');
+  });
+</script>
+
+<script type="text/javascript">
+  $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+</script>
+
+</body>
+</html>
