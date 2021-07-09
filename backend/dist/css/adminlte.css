@@ -52440,4 +52440,34 @@ ul.bottom-menu09 li a:hover{
 .select2-container .select2-selection--single {
       height: 36px;
     }
+.register-bussiness{
+   overflow-y: scroll; 
+   max-height: 237px; 
+   width: 100%;
+}
+ul.real_estate_ck_bx, ul.contractor_application, .property_ck_bx{
+  padding-left: 0px;
+}
+ul.real_estate_ck_bx li {
+    list-style: none;
+    display: inline-block;
+    width: 19%;
+    font-weight: bold;
+}
+ul.property_ck_bx li {
+    list-style: none;
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 400 !important;
+}
+ul.contractor_application li {
+    list-style: none;
+}
+span.radio_customize01 {
+    display: inline-block;
+    width: 60px;
+}
 /*# sourceMappingURL=adminlte.css.map */
