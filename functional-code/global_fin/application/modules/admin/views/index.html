@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Integrity Finance</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+</head>
+ 
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav top-nav009">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block" style="border-bottom: 3px solid; background: #ddd;">
+        <a href="index.html" class="nav-link">Dashboard</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="resources.html" class="nav-link">Resources</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown user-menu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+          <img src="dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
+          <span class="d-none d-md-inline">lo@globalintegrityfinance.com <span class="d-none d-md-inline"> <i class="fas fa-angle-down"></i></span></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="left: inherit; right: 0px;">
+          <!-- User image -->
+          <li class="user-header bg-primary">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            
+            <p>
+              Alexander Pierce - Manager
+              <small>Member since Nov. 2012</small>
+            </p>
+          </li>
+          <!-- Menu Body -->
+          <!-- Menu Footer-->
+          <li class="user-footer">
+            <a href="profile.html" class="btn btn-default btn-flat">Profile</a>
+            <a href="#" class="btn btn-default btn-flat float-right">Sign out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+     
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/logo.png"   alt="logo">
+        </div>
+        
+      </div>
+       <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="index.html" class="nav-link active">
+              <i class="nav-icon fas fa-chart-bar"></i>
+              <p>
+                Broker Dashboard
+              </p>
+            </a>
+             
+          </li>
+          <li class="nav-item">
+            <a href="select-application.html" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p> New Application </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sync-alt"></i>
+              <p>
+                Loans in Process
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-check-alt"></i>
+              <p>
+                Funded Loans
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="calculator.html" class="nav-link" target="_blank">
+              <i class="nav-icon fas fa-calculator"></i>
+              <p>
+                Loan Calculator
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link">
+              <i class="nav-icon fas fa-plus-circle"></i>
+              <p>
+                FAQ
+                 
+              </p>
+            </a>
+          </li>
+           
+           
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+      <ul class="bottom-menu09">
+        <li><a href="https://globalintegrityfinance.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+        <li><a href="#" target="_blank">Licensing</a></li>
+        <li><a href="https://globalintegrityfinance.com/#onepage_contact" target="_blank">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="padding-top: 10px;">
+     
+<div class="col-md-12">
+<div class="card card-success">
+  <div class="card-header">
+    <h3 class="card-title">Loans In Process</h3>
+
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+      </button>
+    </div>
+    <!-- /.card-tools -->
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+    <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>NICKNAME</th>
+                    <th>ADDRESS</th>
+                    <th>LOAN NUMBER</th>
+                    <th>PRODUCT</th>
+                    <th>STATUS</th>
+                    <th>STATUS DATE</th>
+                    <th>LOAN AMOUNT</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                   
+                  <tr>
+                    <td>Peters</td>
+                    <td>700 S. Ash St., APT.12</td>
+                    <td>09</td>
+                    <td>Product1</td>
+                    <td>Active</td>
+                    <td>09/07/2021</td>
+                    <td>40,000</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson</td>
+                    <td>410 Mariposa St., #10</td>
+                    <td>10</td>
+                    <td>Product2</td>
+                    <td>Active</td>
+                    <td>09/01/2021</td>
+                    <td>45,000</td>
+                  </tr>
+                  <tr>
+                    <td>Miller</td>
+                    <td>340 MAIN STREET, #7</td>
+                    <td>11</td>
+                    <td>Product3</td>
+                    <td>Inactive</td>
+                    <td>05/07/2021</td>
+                    <td>70,000</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td> 1340 N. Ash Street, #3</td>
+                    <td>12</td>
+                    <td>Product4</td>
+                    <td>Active</td>
+                    <td>01/03/2021</td>
+                    <td>80,000</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson</td>
+                    <td>133 BROADWAY APT. 1</td>
+                    <td>13</td>
+                    <td>Product5</td>
+                    <td>Inactive</td>
+                    <td>09/03/2021</td>
+                    <td>90,000</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td>2000 Humboldt St., #6</td>
+                    <td>14</td>
+                    <td>Product6</td>
+                    <td>Active</td>
+                    <td>09/07/2020</td>
+                    <td>40,000</td>
+                  </tr>
+                   <tr>
+                    <td>Peters</td>
+                    <td>700 S. Ash St., APT.12</td>
+                    <td>09</td>
+                    <td>Product1</td>
+                    <td>Active</td>
+                    <td>09/07/2021</td>
+                    <td>40,000</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td>410 Mariposa St., #10</td>
+                    <td>10</td>
+                    <td>Product2</td>
+                    <td>Active</td>
+                    <td>09/01/2021</td>
+                    <td>45,000</td>
+                  </tr>
+                  <tr>
+                    <td>Peters</td>
+                    <td>340 MAIN STREET, #7</td>
+                    <td>11</td>
+                    <td>Product3</td>
+                    <td>Inactive</td>
+                    <td>05/07/2021</td>
+                    <td>70,000</td>
+                  </tr>
+                  <tr>
+                    <td>Gecko</td>
+                    <td> 1340 N. Ash Street, #3</td>
+                    <td>12</td>
+                    <td>Product4</td>
+                    <td>Active</td>
+                    <td>01/03/2021</td>
+                    <td>80,000</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td>133 BROADWAY APT. 1</td>
+                    <td>13</td>
+                    <td>Product5</td>
+                    <td>Inactive</td>
+                    <td>09/03/2021</td>
+                    <td>90,000</td>
+                  </tr>
+                  <tr>
+                    <td>Peters</td>
+                    <td>2000 Humboldt St., #6</td>
+                    <td>14</td>
+                    <td>Product6</td>
+                    <td>Active</td>
+                    <td>09/07/2020</td>
+                    <td>40,000</td>
+                  </tr>
+                  </tbody>
+                   
+                </table>
+  </div>
+  <!-- /.card-body -->
+</div>
+<!-- /.card -->
+</div>
+<div class="col-md-12">
+<div class="card card-success">
+  <div class="card-header">
+    <h3 class="card-title">Funded Loans</h3>
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse">
+        <i class="fas fa-minus"></i>
+      </button>
+    </div>
+    <!-- /.card-tools -->
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+     <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>NICKNAME</th>
+                    <th>ADDRESS</th>
+                    <th>LOAN NUMBER</th>
+                    <th>REMAINING ESCROW</th>
+                    <th>CONSTRUCTION BUDGET</th>
+                    <th>DRAW STATUS</th>
+                     
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Smith</td>
+                    <td>New Delhi</td>
+                    <td>0994</td>
+                    <td>8000</td>
+                    <td>80,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson</td>
+                    <td>Noida</td>
+                    <td>065</td>
+                    <td>5000</td>
+                    <td>20,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Miller</td>
+                    <td>Noida</td>
+                    <td>078</td>
+                    <td>9000</td>
+                    <td>70,000</td>
+                    <td>Inactive</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td>New Delhi</td>
+                    <td>0994</td>
+                    <td>8000</td>
+                    <td>80,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson</td>
+                    <td>Noida</td>
+                    <td>065</td>
+                    <td>5000</td>
+                    <td>20,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Miller</td>
+                    <td>Noida</td>
+                    <td>078</td>
+                    <td>9000</td>
+                    <td>70,000</td>
+                    <td>Inactive</td>
+                  </tr>
+                  <tr>
+                    <td>Smith</td>
+                    <td>New Delhi</td>
+                    <td>0994</td>
+                    <td>8000</td>
+                    <td>80,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Jackson</td>
+                    <td>Noida</td>
+                    <td>065</td>
+                    <td>5000</td>
+                    <td>20,000</td>
+                    <td>Active</td>
+                  </tr>
+                  <tr>
+                    <td>Miller</td>
+                    <td>Noida</td>
+                    <td>078</td>
+                    <td>9000</td>
+                    <td>70,000</td>
+                    <td>Inactive</td>
+                  </tr>
+                   
+                  </tbody>
+                  
+                </table>
+  </div>
+  <!-- /.card-body -->
+</div>
+<!-- /.card -->
+</div>
+     
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false, "info": false,"ordering": false,
+      "buttons": ["copy"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": false,
+      "info": false,
+      "autoWidth": false,
+      "responsive": true,
+      "buttons": ["copy"]
+    }).buttons().container().appendTo('#example2_wrapper .col-md-6:eq(0)');
+  });
+</script>
+<script type="text/javascript">
+  $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e7bcca769e9320caabd0a3e/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
